@@ -8,10 +8,16 @@ def main():
         print(num1)
     elif num2>num1 and num2>num3: 
         print(num2)
-    elif num2==num3==num1:
-        print('Respuesta Incorrecta')
-    else:
+    elif num3>num2 and num3>num1:
         print(num3)
+    elif num3==num2 and num3>num1:
+        print(num3)
+    elif num2==num1 and num2>num3:
+        print(num2)
+    elif num1==num3 and num1>num2:
+        print(num1)
+    elif num2==num3==num1:
+        print(num1)
 
 
 if __name__=='__main__':
